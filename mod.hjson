@@ -1,0 +1,8 @@
+name: "test-mod"
+displayName: "Test Mod"
+author: "KerbalBoy"
+main: "io.github.kerbalboy.TestMod"
+description: "A simple Mindustry mod, written in Java, to test what is possible."
+version: 1.0
+minGameVersion: 105
+
