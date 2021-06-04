@@ -2,6 +2,7 @@ package io.github.kerbalboy;
 
 import arc.*;
 import arc.util.*;
+import io.github.kerbalboy.content.Blocks;
 import mindustry.game.EventType.*;
 import mindustry.mod.*;
 import mindustry.ui.dialogs.*;
@@ -17,11 +18,11 @@ public class TestMod extends Mod{
             Time.runTask(10f, () -> {
                 BaseDialog dialogue = new BaseDialog("frog");
                 dialogue.cont.add("SURPRISE FROG").row();
-                //mod sprites are prefixed with the mod name
+                
                 dialogue.cont.image(Core.atlas.find("test-mod-frog")).pad(20f).row();
                 
-                dialogue.cont.add("This mod is only to test out new features.").row();;
-                dialogue.cont.add("Visit kerbalboy.github.io for useful mods!").row();;
+                dialogue.cont.add("This mod is only to test out new features.").row();
+                dialogue.cont.add("Visit kerbalboy.github.io for useful mods!").row();
                 
                 dialogue.cont.button("Hail froggo!", dialogue::hide).size(100f, 50f);
                 dialogue.show();
@@ -31,6 +32,9 @@ public class TestMod extends Mod{
 
     @Override
     public void loadContent(){
-		Log.info("Loading some example content.");
+		Blocks blocks = new Blocks();
+		blocks.load();
+		
+		Log.info("Loaded TestMod!");
     }
 }
