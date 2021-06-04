@@ -15,12 +15,16 @@ public class TestMod extends Mod{
         Events.on(ClientLoadEvent.class, e -> {
             //show dialog upon startup
             Time.runTask(10f, () -> {
-                BaseDialog dialog = new BaseDialog("frog");
-                dialog.cont.add("behold").row();
+                BaseDialog dialogue = new BaseDialog("frog");
+                dialogue.cont.add("SURPRISE FROG").row();
                 //mod sprites are prefixed with the mod name
-                dialog.cont.image(Core.atlas.find("test-mod-frog")).pad(20f).row();
-                dialog.cont.button("I see", dialog::hide).size(100f, 50f);
-                dialog.show();
+                dialogue.cont.image(Core.atlas.find("test-mod-frog")).pad(20f).row();
+                
+                dialogue.cont.add("This mod is only to test out new features.").row();;
+                dialogue.cont.add("Visit kerbalboy.github.io for useful mods!").row();;
+                
+                dialogue.cont.button("Hail froggo!", dialogue::hide).size(100f, 50f);
+                dialogue.show();
             });
         });
     }
