@@ -23,7 +23,7 @@ public class Blocks implements ContentList {
 			requirements(Category.defense, with(Items.copper, 10));
 		}};
 		
-		largeRedWall = new Wall("large-red-wall") {{
+		largeRedWall = new Wall("red-wall-large") {{
 			size = 2;
 			health = 3000;
 			chanceDeflect = -1;
