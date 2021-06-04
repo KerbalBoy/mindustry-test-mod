@@ -2,17 +2,14 @@ package io.github.kerbalboy;
 
 import arc.*;
 import arc.util.*;
-import mindustry.*;
-import mindustry.content.*;
 import mindustry.game.EventType.*;
-import mindustry.gen.*;
 import mindustry.mod.*;
 import mindustry.ui.dialogs.*;
 
 public class TestMod extends Mod{
 
     public TestMod(){
-        Log.info("Loaded ExampleJavaMod constructor.");
+        Log.info("Loaded TestMod constructor.");
 
         //listen for game load event
         Events.on(ClientLoadEvent.class, e -> {
@@ -32,5 +29,4 @@ public class TestMod extends Mod{
     public void loadContent(){
 		Log.info("Loading some example content.");
     }
-
 }
