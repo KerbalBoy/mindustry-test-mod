@@ -3,5 +3,5 @@ displayName: "[gold]TestMod"
 author: "[gold]KerbalBoy"
 main: "io.github.kerbalboy.TestMod"
 description: "[blue]An unstable Mindustry mod only used for testing"
-version: 1.1
+version: 1.0
 minGameVersion: 105
