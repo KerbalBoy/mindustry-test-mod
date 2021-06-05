@@ -1,7 +1,7 @@
 name: "test-mod"
-displayName: "TestMod"
-author: "KerbalBoy"
+displayName: "[gold]TestMod"
+author: "[gold]KerbalBoy"
 main: "io.github.kerbalboy.TestMod"
-description: "A simple Mindustry mod, written in Java, to test what is possible."
+description: "[blue]An unstable Mindustry mod only used for testing"
 version: 1.0
 minGameVersion: 105
