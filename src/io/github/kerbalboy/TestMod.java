@@ -2,7 +2,7 @@ package io.github.kerbalboy;
 
 import arc.*;
 import arc.util.*;
-import io.github.kerbalboy.content.Blocks;
+import io.github.kerbalboy.content.Loader;
 import mindustry.game.EventType.*;
 import mindustry.mod.*;
 import mindustry.ui.dialogs.*;
@@ -32,8 +32,8 @@ public class TestMod extends Mod{
 
     @Override
     public void loadContent(){
-		Blocks blocks = new Blocks();
-		blocks.load();
+		Loader loader = new Loader();
+		loader.load();
 		
 		Log.info("Loaded TestMod!");
     }
