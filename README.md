@@ -4,6 +4,14 @@
 
 A simple Mindustry mod, written in Java, to test what is possible.
 
+## Items
+
+### Red
+
+![Red](assets/sprites/items/red.png)
+
+A blob of the colour red, for building red blocks. Currently cannot be obtained.
+
 ## Blocks
 
 ### Red wall
