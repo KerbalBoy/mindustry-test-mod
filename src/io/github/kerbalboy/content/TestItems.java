@@ -4,7 +4,7 @@ import arc.graphics.Color;
 import mindustry.ctype.ContentList;
 import mindustry.type.Item;
 
-public class Items implements ContentList {
+public class TestItems implements ContentList {
 
 	public static Item
 		red;

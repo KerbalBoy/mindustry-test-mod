@@ -9,8 +9,8 @@ public class Loader implements ContentList {
 	@Override
 	public void load() {
 		ArrayList<ContentList> content = new ArrayList<ContentList>();
-		content.add(new Items());
-		content.add(new Blocks());
+		content.add(new TestItems());
+		content.add(new TestBlocks());
 		
 		for (ContentList contentList: content) {
 			contentList.load();

@@ -8,7 +8,7 @@ import mindustry.world.blocks.defense.Wall;
 
 import static mindustry.type.ItemStack.with;
 
-public class Blocks implements ContentList {
+public class TestBlocks implements ContentList {
 
 	public static Block
 		//Walls
