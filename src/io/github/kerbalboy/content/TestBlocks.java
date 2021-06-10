@@ -1,6 +1,5 @@
 package io.github.kerbalboy.content;
 
-import mindustry.content.Items;
 import mindustry.ctype.ContentList;
 import mindustry.type.Category;
 import mindustry.world.Block;
@@ -20,14 +19,14 @@ public class TestBlocks implements ContentList {
 			size = 1;
 			health = 600;
 			chanceDeflect = -1;
-			requirements(Category.defense, with(Items.copper, 10));
+			requirements(Category.defense, with(TestItems.red, 10));
 		}};
 		
 		largeRedWall = new Wall("red-wall-large") {{
 			size = 2;
 			health = 3000;
 			chanceDeflect = -1;
-			requirements(Category.defense, with(Items.copper, 50));
+			requirements(Category.defense, with(TestItems.red, 50));
 		}};
 	}
 }
