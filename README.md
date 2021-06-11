@@ -18,7 +18,7 @@ A blob of the colour red, for building red blocks. Currently cannot be obtained.
 
 ![Red wall](assets/sprites/blocks/walls/red-wall.png)
 
-Build cost: 10 copper
+Build cost: 10 red
 
 Health: 600
 
@@ -26,6 +26,6 @@ Health: 600
 
 ![Large red wall](assets/sprites/blocks/walls/red-wall-large.png)
 
-Build cost: 50 copper
+Build cost: 50 red
 
 Health: 3000
