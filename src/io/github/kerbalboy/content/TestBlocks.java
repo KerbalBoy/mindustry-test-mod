@@ -4,6 +4,7 @@ import mindustry.ctype.ContentList;
 import mindustry.type.Category;
 import mindustry.world.Block;
 import mindustry.world.blocks.defense.Wall;
+import mindustry.world.blocks.environment.OreBlock;
 
 import static mindustry.type.ItemStack.with;
 
@@ -11,7 +12,10 @@ public class TestBlocks implements ContentList {
 
 	public static Block
 		//Walls
-		redWall, largeRedWall;
+		redWall, largeRedWall,
+	
+		//Ores
+		red;
 	
 	@Override
 	public void load() {
@@ -27,6 +31,12 @@ public class TestBlocks implements ContentList {
 			health = 3000;
 			chanceDeflect = -1;
 			requirements(Category.defense, with(TestItems.red, 50));
+		}};
+		
+		red = new OreBlock("red") {{
+            oreDefault = true;
+            oreThreshold = 0.864f;
+            oreScale = 24.904762f;
 		}};
 	}
 }
