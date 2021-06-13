@@ -33,7 +33,7 @@ public class TestBlocks implements ContentList {
 			requirements(Category.defense, with(TestItems.red, 50));
 		}};
 		
-		red = new OreBlock("red") {{
+		red = new OreBlock(TestItems.red) {{
             oreDefault = true;
             oreThreshold = 0.864f;
             oreScale = 24.904762f;
